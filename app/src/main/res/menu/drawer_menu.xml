@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Nhóm tính năng chính -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_menu_library"
+            android:title="Thư viện của tôi" />
+        <item
+            android:id="@+id/nav_ai_notes"
+            android:icon="@drawable/ic_menu_edit"
+            android:title="Ghi chú AI" />
+        <item
+            android:id="@+id/nav_ask_ai"
+            android:icon="@drawable/ic_menu_chat"
+            android:title="Hỏi AI" />
+        <item
+            android:id="@+id/nav_ai_quiz"
+            android:icon="@drawable/ic_menu_quiz"
+            android:title="Tạo Quiz" />
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/ic_menu_recent"
+            android:title="Gần đây" />
+    </group>
+
+    <!-- Nhóm Thư mục con -->
+    <item android:title="Tài liệu của tôi">
+        <menu>
+            <item
+                android:id="@+id/nav_courses"
+                android:icon="@drawable/ic_menu_course"
+                android:title="Khóa học" />
+            <item
+                android:id="@+id/nav_projects"
+                android:icon="@drawable/ic_menu_project"
+                android:title="Dự án" />
+        </menu>
+    </item>
+</menu>

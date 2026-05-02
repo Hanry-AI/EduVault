@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F8F9FA"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="16dp">
+
+    <!-- Biến Section Web thành In-App Banner Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#1E293B"> <!-- Màu Slate Navy tạo sự cao cấp, làm nổi bật nút xanh -->
+
+        <!-- Thêm hiệu ứng Ripple khi user bấm vào bất cứ đâu trên Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="32dp"
+            android:paddingHorizontal="24dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Icon tải lên -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:src="@android:drawable/ic_menu_upload"
+                app:tint="#38ef7d"/> <!-- Nhuộm màu xanh lá mạ của dải Quepal -->
+
+            <!-- Tiêu đề bám sát Product Core -->
+            <TextView
+                android:id="@+id/tvUploadTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chia sẻ tài liệu của bạn"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Subtitle giải thích lợi ích (Reward) -->
+            <TextView
+                android:id="@+id/tvUploadSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Giúp hàng ngàn sinh viên khác học tốt hơn và nhận ngay điểm thưởng VIP."
+                android:textColor="#CBD5E1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Nút bấm nổi bật bọc trong FrameLayout để giữ hiệu ứng tương tác -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUploadDocs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_gradient_quepal"
+                    android:text="TẢI LÊN NGAY"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="32dp"
+                    android:elevation="4dp"
+                    android:stateListAnimator="@null"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

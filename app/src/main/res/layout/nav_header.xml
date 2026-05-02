@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng đến EduVault"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Đăng nhập để truy cập tài liệu"
+        android:textColor="#555555"
+        android:textSize="14sp" />
+
+    <!-- Khu vực 2 nút bấm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:baselineAligned="false">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            app:strokeColor="#CCCCCC"
+            app:cornerRadius="24dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Đăng ký"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#16A300"
+        app:cornerRadius="24dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginVertical="16dp"/>
+
+    <!-- Thông tin Guest -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_input_rounded"
+            android:backgroundTint="#37474F"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="#FFFFFF"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khách"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Thêm trường học của bạn"
+                android:textColor="#1A73E8"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Khu vực Thống kê (Chỉ số) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textColor="#000000" android:textSize="16sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Người theo dõi" android:textColor="#555555" android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textColor="#000000" android:textSize="16sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tải lên" android:textColor="#555555" android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textStyle="bold" android:textColor="#000000" android:textSize="16sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lượt thích" android:textColor="#555555" android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginTop="16dp"/>
+</LinearLayout>
