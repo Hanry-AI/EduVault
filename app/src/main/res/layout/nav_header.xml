@@ -17,6 +17,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvSubtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -24,8 +25,9 @@
         android:textColor="#555555"
         android:textSize="14sp" />
 
-    <!-- Khu vực 2 nút bấm -->
+    <!-- Khu vực 2 nút bấm (Đã thêm ID layoutGuestButtons) -->
     <LinearLayout
+        android:id="@+id/layoutGuestButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -33,6 +35,7 @@
         android:baselineAligned="false">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLoginDrawer"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -46,6 +49,7 @@
             app:cornerRadius="24dp"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegisterDrawer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -55,7 +59,7 @@
             android:textSize="15sp"
             android:textColor="#FFFFFF"
             app:backgroundTint="#16A300"
-        app:cornerRadius="24dp"/>
+            app:cornerRadius="24dp"/>
     </LinearLayout>
 
     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginVertical="16dp"/>
@@ -82,7 +86,9 @@
             android:orientation="vertical"
             android:layout_marginStart="12dp">
 
+            <!-- Đã thêm ID tvUserName -->
             <TextView
+                android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Khách"

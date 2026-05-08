@@ -21,6 +21,9 @@
             android:name="com.example.dacs.ui.auth.LoginActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.dacs.ui.profile.SetupProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.dacs.ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"

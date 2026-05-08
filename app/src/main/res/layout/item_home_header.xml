@@ -9,6 +9,12 @@
 
     <!-- ================= TOP NAVIGATION BAR ================= -->
     <!-- Đã thêm layout_marginTop="36dp" để né thanh trạng thái (Status Bar) -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageView" />
+
     <LinearLayout
         android:id="@+id/topNavBar"
         android:layout_width="match_parent"
@@ -49,11 +55,15 @@
 
         <!-- 3. Icon User Profile -->
         <ImageView
+            android:id="@+id/imgUserProfile"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/ic_menu_person"
-            app:tint="#FFFFFF" />
+            app:tint="#FFFFFF"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
 
         <!-- 4. Cờ Việt Nam -->
         <LinearLayout
