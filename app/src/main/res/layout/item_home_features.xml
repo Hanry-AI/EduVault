@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#FAFAFA"
     android:paddingTop="32dp"
     android:paddingBottom="48dp"
     android:paddingHorizontal="24dp">
@@ -16,7 +16,7 @@
         android:text="Công cụ học tập thông minh"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="#202124"
+        android:textColor="#18181B"
         android:layout_marginBottom="24dp"/>
 
     <!-- [CARD 1] BỨT PHÁ HỌC TẬP (Ace your studies) -->
@@ -24,9 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="2dp"
-        app:strokeColor="#E8EAED"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#E4E4E7"
         app:strokeWidth="1dp">
 
         <LinearLayout
@@ -44,14 +44,14 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/bg_input_rounded"
-                android:backgroundTint="#E8F0FE"
+                android:backgroundTint="#FEF3C7"
                 android:gravity="center">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@android:drawable/ic_menu_edit"
-                    app:tint="#1A73E8"/>
+                    app:tint="#CA8A04"/>
             </LinearLayout>
 
             <!-- Text Content -->
@@ -67,7 +67,7 @@
                     android:text="Bứt phá học tập"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#202124"/>
+                    android:textColor="#18181B"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
                     android:layout_marginTop="4dp"
                     android:text="Biến mọi tài liệu thành công cụ tương tác đắc lực."
                     android:textSize="14sp"
-                    android:textColor="#5F6368"
+                    android:textColor="#71717A"
                     android:lineSpacingExtra="2dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -86,9 +86,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="2dp"
-        app:strokeColor="#E8EAED"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#E4E4E7"
         app:strokeWidth="1dp">
 
         <LinearLayout
@@ -112,7 +112,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@android:drawable/ic_menu_agenda"
-                    app:tint="#1E8E3E"/>
+                    app:tint="#15803D"/>
             </LinearLayout>
 
             <LinearLayout
@@ -127,7 +127,7 @@
                     android:text="Luyện tập trắc nghiệm"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#202124"/>
+                    android:textColor="#18181B"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -135,7 +135,7 @@
                     android:layout_marginTop="4dp"
                     android:text="Tự động tạo đề thi thử để tự tin bước vào phòng thi."
                     android:textSize="14sp"
-                    android:textColor="#5F6368"
+                    android:textColor="#71717A"
                     android:lineSpacingExtra="2dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -145,9 +145,9 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="2dp"
-        app:strokeColor="#E8EAED"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#E4E4E7"
         app:strokeWidth="1dp">
 
         <LinearLayout
@@ -164,14 +164,14 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/bg_input_rounded"
-                android:backgroundTint="#FCE8E6"
+                android:backgroundTint="#FCE7F3"
                 android:gravity="center">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@android:drawable/ic_menu_sort_by_size"
-                    app:tint="#D93025"/>
+                    app:tint="#BE185D"/>
             </LinearLayout>
 
             <LinearLayout
@@ -186,7 +186,7 @@
                     android:text="Tóm tắt bằng AI"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#202124"/>
+                    android:textColor="#18181B"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -194,7 +194,7 @@
                     android:layout_marginTop="4dp"
                     android:text="Nắm trọn ý chính của tài liệu dài chỉ trong vài giây."
                     android:textSize="14sp"
-                    android:textColor="#5F6368"
+                    android:textColor="#71717A"
                     android:lineSpacingExtra="2dp"/>
             </LinearLayout>
         </LinearLayout>

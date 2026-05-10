@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "35184300203",
+    "project_id": "eduvault-1f512",
+    "storage_bucket": "eduvault-1f512.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35184300203:android:5c7447074e61a0a433e7ee",
+        "android_client_info": {
+          "package_name": "com.example.dacs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf3f-crIRE2yV6pq-oxLCnqjyJ3fnmqgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

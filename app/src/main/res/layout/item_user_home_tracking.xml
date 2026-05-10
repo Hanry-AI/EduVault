@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="14dp"
+    android:layout_marginBottom="22dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#ECECEC"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TOP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- ICON -->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:background="@drawable/bg_input_rounded"
+                android:backgroundTint="#FEF3C7">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_subject" />
+            </LinearLayout>
+
+            <!-- TEXT -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theo dõi môn học"
+                    android:textColor="#18181B"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhận đề xuất tài liệu và quiz phù hợp mỗi ngày"
+                    android:textColor="#71717A"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- SUBJECT CHIPS -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:chipSpacingHorizontal="10dp"
+            app:chipSpacingVertical="10dp">
+
+            <!-- ACTIVE -->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kinh tế vi mô"
+                android:textColor="#18181B"
+                android:textStyle="bold"
+                app:chipBackgroundColor="#FACC15"
+                app:chipCornerRadius="18dp"
+                app:chipStrokeWidth="0dp"
+                android:minHeight="42dp"/>
+
+            <!-- NORMAL -->
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marketing"
+                android:textColor="#52525B"
+                app:chipBackgroundColor="#F4F4F5"
+                app:chipCornerRadius="18dp"
+                app:chipStrokeColor="#E4E4E7"
+                app:chipStrokeWidth="1dp"
+                android:minHeight="42dp"/>
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thống kê"
+                android:textColor="#52525B"
+                app:chipBackgroundColor="#F4F4F5"
+                app:chipCornerRadius="18dp"
+                app:chipStrokeColor="#E4E4E7"
+                app:chipStrokeWidth="1dp"
+                android:minHeight="42dp"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- CTA -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddSubject"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Thêm môn học"
+            android:textAllCaps="false"
+            android:textColor="#18181B"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:backgroundTint="#FACC15"
+            app:cornerRadius="20dp"
+            app:elevation="0dp"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconTint="#18181B"
+            app:iconPadding="8dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
