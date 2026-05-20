@@ -1,5 +1,6 @@
 package com.example.dacs.ui.home
 
+import com.example.dacs.ui.MainActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -31,7 +32,10 @@ class UserHomeFragment : Fragment() {
         rvUserHome.layoutManager = LinearLayoutManager(requireContext())
 
         // 2. Khởi tạo 8 khối Lego
-        val topBarAdapter = UserHomeTopBarAdapter()
+        val topBarAdapter = UserHomeTopBarAdapter {
+            // Ép kiểu Activity chứa Fragment này về MainActivity và gọi hàm openDrawer
+            (activity as? com.example.dacs.ui.MainActivity)?.openDrawer()
+        }
         val filterAdapter = UserHomeFilterAdapter()
         val bannerAdapter = UserHomeBannerAdapter()
         val toolsAdapter = UserHomeToolsAdapter()

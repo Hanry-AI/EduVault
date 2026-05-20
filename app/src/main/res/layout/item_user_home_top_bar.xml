@@ -87,11 +87,11 @@
             app:cardElevation="0dp">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="13dp"
+                android:layout_height="14dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_menu"
-                app:tint="#FFFFFF"/>
+                app:tint="#FFFFFF" />
 
         </com.google.android.material.card.MaterialCardView>
 

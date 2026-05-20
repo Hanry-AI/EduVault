@@ -3,45 +3,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <!-- Nhóm tính năng chính -->
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_home"
-            android:title="Trang chủ" />
-        <item
-            android:id="@+id/nav_library"
-            android:icon="@drawable/ic_menu_library"
-            android:title="Thư viện của tôi" />
-        <item
-            android:id="@+id/nav_ai_notes"
-            android:icon="@drawable/ic_menu_edit"
-            android:title="Ghi chú AI" />
-        <item
-            android:id="@+id/nav_ask_ai"
-            android:icon="@drawable/ic_menu_chat"
-            android:title="Hỏi AI" />
-        <item
-            android:id="@+id/nav_ai_quiz"
-            android:icon="@drawable/ic_menu_quiz"
-            android:title="Tạo Quiz" />
-        <item
-            android:id="@+id/nav_recent"
-            android:icon="@drawable/ic_menu_recent"
-            android:title="Gần đây" />
-    </group>
-
-    <!-- Nhóm Thư mục con -->
-    <item android:title="Tài liệu của tôi">
+    <item
+        android:id="@+id/title_discover"
+        android:title="KHÁM PHÁ">
         <menu>
-            <item
-                android:id="@+id/nav_courses"
-                android:icon="@drawable/ic_menu_course"
-                android:title="Khóa học" />
-            <item
-                android:id="@+id/nav_projects"
-                android:icon="@drawable/ic_menu_project"
-                android:title="Dự án" />
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_menu_home"
+                    android:orderInCategory="1"
+                    android:title="Trang chủ" />
+
+                <item
+                    android:id="@+id/nav_library"
+                    android:icon="@drawable/ic_menu_library"
+                    android:orderInCategory="2"
+                    android:title="Thư viện của tôi" />
+
+                <item
+                    android:id="@+id/nav_ai_notes"
+                    android:icon="@drawable/ic_menu_edit"
+                    android:orderInCategory="3"
+                    android:title="Ghi chú AI" />
+
+                <item
+                    android:id="@+id/nav_ai_quiz"
+                    android:icon="@drawable/ic_menu_quiz"
+                    android:orderInCategory="4"
+                    android:title="Quiz AI" />
+
+                <item
+                    android:id="@+id/nav_ask_ai"
+                    android:icon="@drawable/ic_menu_chat"
+                    android:orderInCategory="5"
+                    android:title="Hỏi AI" />
+
+                <item
+                    android:id="@+id/nav_recent"
+                    android:icon="@drawable/ic_menu_recent"
+                    android:orderInCategory="6"
+                    android:title="Gần đây" />
+            </group>
         </menu>
     </item>
+
+    <item
+        android:id="@+id/title_library"
+        android:title="THƯ VIỆN">
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_courses"
+                    android:icon="@drawable/ic_menu_course"
+                    android:orderInCategory="7"
+                    android:title="Môn học" />
+
+                <item
+                    android:id="@+id/nav_projects"
+                    android:icon="@drawable/ic_menu_project"
+                    android:orderInCategory="8"
+                    android:title="Dự án" />
+
+                <item
+                    android:id="@+id/nav_saved"
+                    android:icon="@drawable/ic_saved"
+                    android:orderInCategory="9"
+                    android:title="Đã lưu" />
+
+            </group>
+        </menu>
+    </item>
+
 </menu>

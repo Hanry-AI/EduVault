@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dacs.dacs.R
 import com.google.firebase.auth.FirebaseAuth
 
-// 1. Khai báo rõ ràng dùng TopBarViewHolder
-class UserHomeTopBarAdapter : RecyclerView.Adapter<UserHomeTopBarAdapter.TopBarViewHolder>() {
+// 1. SỬA CHỖ NÀY: Thêm tham số onMenuClick vào hàm khởi tạo của class
+class UserHomeTopBarAdapter(private val onMenuClick: () -> Unit) : RecyclerView.Adapter<UserHomeTopBarAdapter.TopBarViewHolder>() {
 
-    // 2. Đổi tên class để không đụng hàng với thư viện Android
     class TopBarViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvAvatarUserAI: TextView = view.findViewById(R.id.tvAvatarUserAI)
+        val cvMenu: View = view.findViewById(R.id.cvMenu)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopBarViewHolder {
@@ -23,13 +23,16 @@ class UserHomeTopBarAdapter : RecyclerView.Adapter<UserHomeTopBarAdapter.TopBarV
     }
 
     override fun onBindViewHolder(holder: TopBarViewHolder, position: Int) {
-        // Logic này rất xịn: Lấy tên thật của User bỏ vào Avatar
+        // Logic lấy tên thật của User bỏ vào Avatar
         val user = FirebaseAuth.getInstance().currentUser
         user?.let {
             val initial = it.displayName?.take(1) ?: it.email?.take(1) ?: "U"
             holder.tvAvatarUserAI.text = initial.uppercase()
         }
+
+        // 2. Vì đã khai báo ở trên, giờ gọi onMenuClick() thoải mái không bị báo đỏ nữa!
+        holder.cvMenu.setOnClickListener { onMenuClick() }
     }
 
-    override fun getItemCount() = 1 // Vì Top Bar chỉ hiện 1 lần
+    override fun getItemCount() = 1
 }
